@@ -1,11 +1,13 @@
 <template>
   <div class="texte">
-    <div v-if="showNewInput" class="editpop">
-      <vue-editor
-        placeholder="Write comment here"
+    <div v-if="showNewInput" class="editpop" >
+       <v-fab-transition>
+<vue-editor
         v-model="content"
+        placeholder="Write comment here"
         :editor-toolbar="customToolbar"
       />
+       </v-fab-transition>
 
       <div class="d-flex justify-start pa-2 red">
         <v-btn
@@ -69,11 +71,10 @@ input {
 }
 
 .icon-rtl {
-  padding-right: 20px;
-  /* https://www.nicepng.com/png/detail/443-4439064_blue-check-mark-icon-png-check-mark-circle.png */
-  background: url("https://static.thenounproject.com/png/101791-200.png")
+
+  background: url("https://w7.pngwing.com/pngs/345/390/png-transparent-check-mark-computer-icons-circle-circle-thumbnail.png")
     no-repeat right white;
   background-size: 20px;
-  margin-right: 50px;
+  padding-right: 50px;
 }
 </style>
