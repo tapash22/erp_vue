@@ -97,7 +97,10 @@
                       </span>
                     </v-avatar>
                     <div class="texte">
-                      <TextEditor2 />
+                      <Transition name="fade" mode="out-in">
+                        <TextEditor2 />
+                      </Transition>
+                      
                     </div>
                   </v-list-item>
                 </v-list>
@@ -458,5 +461,26 @@ input {
 
 .dialog-box {
   display: block !important;
+}
+
+
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.8s ease-in-out;
+  opacity: 1;
+
+}
+
+/* .fade-leave-from,
+.fade-enter-to{
+  transition-delay: 10s;
+} */
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.8s ease-in-out;
 }
 </style>

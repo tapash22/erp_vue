@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="d-block d-md-flex pa-1">
+        <div class="d-block d-md-flex pa-2">
             <div class="pa-2 indigo lighten-5 rounded-lg d-flex justify-space-between align-center d-md-block box3">
                 <span class="red--text text-h6">{{ ct.number }}</span>
                 <div class="text-caption">
@@ -11,10 +11,10 @@
                 </div>
             </div>
 
-            <div class="pa-1 font font2 box2 text-justify">{{ ct.text1 }}</div>
+            <div class="pa-2 font font2 box2 text-justify ">{{ ct.text1 }}</div>
         </div>
 
-        <div class="pa-2 font font2 text-justify">
+        <div class="pa-4 font font2 text-justify">
             <!-- {{ ct.text2 }} -->
             {{ formattedBody }}
             <v-btn text @click="showingFullText = !showingFullText"  class="blue--text pa-0 text-decoration-none">

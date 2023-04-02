@@ -26,10 +26,13 @@
     </div>
 
     <div>
+      <transition mode="out" enter-active-class="animate__animated animate__zoomIn animate__faster"
+        leave-active-class="animate__animated animate__zoomOut animate__fast">
       <v-list-item-subtitle v-if="showInput">
         <TextEditor3 />
         <div v-if="showNewInput" style="display: block"></div>
       </v-list-item-subtitle>
+</transition>
     </div>
     <div v-if="openEmoji" class="emoji">
       <Emoji />

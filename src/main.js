@@ -7,6 +7,8 @@ import Vue2Editor from "vue2-editor";
 
 import "./assets/css/index.css";
 
+import 'animate.css';
+
 Vue.config.productionTip = false;
 
 Vue.filter("truncate", function (text, length) {

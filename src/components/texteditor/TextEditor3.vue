@@ -1,5 +1,8 @@
 <template>
   <div class="texte">
+    <transition mode="out" enter-active-class="animate__animated animate__zoomIn animate__faster"
+        leave-active-class="animate__animated animate__zoomOut animate__fast">
+
     <div v-if="showNewInput" class="editpop">
       <vue-editor
         v-model="content"
@@ -17,7 +20,9 @@
         </v-btn>
       </div>
     </div>
-    <div class="w-full" v-else>
+    </transition>
+
+    <div class="w-full" v-if="!showNewInput">
       <input
         type="text"
         placeholder="Click to add reply here"
