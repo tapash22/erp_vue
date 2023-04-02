@@ -1,6 +1,6 @@
 <template>
   <v-card class="my-1 rounded-lg">
-    <v-card-title class="rounded-tl-lg rounded-tr-lg d-flex justify-start font font1 card-t">
+    <v-card-title class="rounded-tl-lg rounded-tr-lg d-flex justify-start font font1 card-t font-weight-bold">
       {{ detail.title }}
     </v-card-title>
     

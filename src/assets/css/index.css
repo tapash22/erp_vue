@@ -8,3 +8,22 @@
 .font-text {
   font-size: 16px;
 }
+
+.light::-webkit-scrollbar {
+  width: 10px;
+}
+
+.light::-webkit-scrollbar-track {
+  background: #e6e6e6;
+  border-left: 1px solid #dadada;
+}
+
+.light::-webkit-scrollbar-thumb {
+  background: #616e80;
+  border: solid 3px #e6e6e6;
+  border-radius: 7px;
+}
+
+.light::-webkit-scrollbar-thumb:hover {
+  background: #616e80;
+}

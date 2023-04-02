@@ -85,7 +85,7 @@
 
           <v-dialog v-model="dialog" width="750px">
             <v-card class="pa-4 card">
-              <v-card-text class="pa-4 card-text">
+              <v-card-text class="pa-4 card-text light">
                 <v-list class="pa-0 card-text">
                   <v-list-item
                     class="d-flex justify-start first"
@@ -194,7 +194,7 @@
             </v-card-text>
 
             <v-card-actions class="d-flex justify-end py-1">
-              <v-btn color="#1D82F5" outlined class="rounded-lg" text
+              <v-btn color="#1D82F5" @click="showSingleComment=false" outlined class="rounded-lg" 
                 >Close</v-btn
               >
             </v-card-actions>
@@ -370,6 +370,26 @@ export default {
 </script>
 
 <style scoped>
+
+.light::-webkit-scrollbar {
+    width: 10px;
+}
+
+.light::-webkit-scrollbar-track {
+    background: #e6e6e6;
+    border-left: 1px solid #dadada;
+}
+
+.light::-webkit-scrollbar-thumb {
+    background: #616e80;
+    border: solid 3px #e6e6e6;
+    border-radius: 7px;
+}
+
+.light::-webkit-scrollbar-thumb:hover {
+    background: #616e80;
+}
+
 .texte {
   width: 100%;
 }

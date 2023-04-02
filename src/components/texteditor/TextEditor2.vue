@@ -2,7 +2,7 @@
   <div class="texte">
     <!-- <Transition name="fade" mode="out-in"> -->
     <div>
-      <transition mode="out" enter-active-class="animate__animated animate__zoomIn animate__faster"
+      <transition enter-active-class="animate__animated animate__zoomIn animate__faster"
         leave-active-class="animate__animated animate__zoomOut animate__fast">
 
         <div v-if="showNewInput" class="editpop">

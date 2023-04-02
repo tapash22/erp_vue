@@ -1,7 +1,7 @@
 <template>
 <v-expansion-panels focusable>
     <v-expansion-panel>
-        <v-expansion-panel-header class="white--text font font1" color="red darken-2">
+        <v-expansion-panel-header class="white--text font font1 font-weight-bold" color="red darken-2">
             <template v-slot:actions>
                 <v-icon color="red"> $expand </v-icon>
             </template>
